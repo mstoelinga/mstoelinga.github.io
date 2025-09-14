@@ -55,6 +55,8 @@ A{text-decoration: none}
   <a target="_blank" href="https://time.is/UTC" >What time is it?</a><br><br>
 
 <hr>
+  <!--- To add sites that get opened in new tabs upon this button click (for daily weather briefing prep/staging),>
+  <!--- add hyperlinks to the "urls" list in function openMultipleTabs(), below.>
   <button onclick="openMultipleTabs()">
       Tabs for Daily Water Management Briefing
   </button>
@@ -62,8 +64,10 @@ A{text-decoration: none}
 
   <script>
       function openMultipleTabs() {
-          // Define the URLs you want to open in an array
-          const urls = [
+          // ===== HERE IS WHERE YOU ADD SITES TO BE OPENED WHEN THE OPENMULTIPLETABS FUNCTION IS CALLED. ================
+          // ===== Note, the window.open() function is typically blocked if you have a pop-up blocker
+          // ===== running in your browser.
+	      const urls = [
               'https://www.google.com',
               'https://www.wikipedia.org',
               'https://www.example.com'
