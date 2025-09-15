@@ -68,9 +68,18 @@ A{text-decoration: none}
           // ===== Note, the window.open() function is typically blocked if you have a pop-up blocker
           // ===== running in your browser, and only the first, or maybe no, tabs will open.
 	      const urls = [
-              'https://www.google.com',  // google dot com
-              'https://www.wikipedia.org',  // wikipedia
-              'https://www.example.com'  // just an example
+			  'https://forecast.weather.gov/product.php?site=NWS&issuedby=sew&product=AFD&format=CI&glossary=1',  // NatWeaSvc - Seattle Area Fcst Disc
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?h500_vort+/-168/168',  // UW Loop of GFS 500 hPa -7 to +7 days
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?ir_common+/48h',   // UW IR satellilte NE Pac 48-h loop
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/24h',   // UW Vis satellilte WA St 24-h loop
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?radar_atx_ref1+/3h/+-update+3600',   // UW NEXRAD radar 3-h loop
+			  'https://www.nwrfc.noaa.gov/rfc/',  // RFC precip map (click observed precip on right side, then 24-h accum button)
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_pcp3+///3',  // UW GFS-WRF 4-km 3-h precip
+			  'https://www.weather.gov/sew/forecastgraphics',  // NatWeaSvc - Seattle hi/lo temp forecasts
+			  'https://cw3e.ucsd.edu/Projects/QPF/QPF.html',  // CW3e QPF
+			  'https://cw3e.ucsd.edu/iwv-and-ivt-forecasts/',  // CW3E AR products
+			  'https://cw3e.ucsd.edu/west-wrf_gfs_ecmwf_ivt/',  // CW3E West WRF IVT forecasts
+			  'https://www.nwrfc.noaa.gov/weather/10_day.cgi'  // NWRFC 10-day outlook
           ];
 
           // Loop through the array and open each URL in a new tab
