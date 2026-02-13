@@ -64,18 +64,24 @@ A{text-decoration: none}
           // ===== Note, the window.open() function is typically blocked if you have a pop-up blocker
           // ===== running in your browser, and only the first, or maybe no, tabs will open.
 	      const urls = [
-			  'https://forecast.weather.gov/product.php?site=NWS&issuedby=sew&product=AFD&format=CI&glossary=1',  // NatWeaSvc - Seattle Area Fcst Disc
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?h500_vort+/-168/168/',  // UW Loop of GFS 500 hPa -7 to +7 days
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?ir_common+/48h',   // UW IR satellilte NE Pac 48-h loop
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/24h',   // UW Vis satellilte WA St 24-h loop
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?radar_atx_ref1+/3h/+-update+3600',   // UW NEXRAD radar 3-h loop
-			  'https://www.nwrfc.noaa.gov/rfc/',  // RFC precip map (click observed precip on right side, then 24-h accum button)
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_pcp3+///3',  // UW GFS-WRF 4-km 3-h precip
-			  'https://www.weather.gov/sew/forecastgraphics',  // NatWeaSvc - Seattle hi/lo temp forecasts
-			  'https://cw3e.ucsd.edu/Projects/QPF/QPF.html',  // CW3e QPF
-			  'https://cw3e.ucsd.edu/iwv-and-ivt-forecasts/',  // CW3E AR products
-			  'https://cw3e.ucsd.edu/west-wrf_gfs_ecmwf_ivt/',  // CW3E West WRF IVT forecasts
-			  'https://www.nwrfc.noaa.gov/weather/10_day.cgi'  // NWRFC 10-day outlook
+			  'https://forecast.weather.gov/product.php?site=NWS&issuedby=sew&product=AFD&format=CI&glossary=1',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?h500_vort+/-168/168/',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?ir_common+/48h',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/24h',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?radar_atx_ref1+/4h/+-update+3600',
+			  'https://www.weather.gov/wrh/hazards?obs=true&wfo=sew',
+			  'https://a.atmos.washington.edu/~ovens/loops/wxloop.cgi?wrfd1_slp+///1',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_pcp3+///3',
+			  'https://www.weather.gov/sew/forecastgraphics',
+			  'https://www.weather.gov/marine/sewmz',
+			  'https://cw3e.ucsd.edu/Projects/QPF/QPF.html',
+			  'https://cw3e.ucsd.edu/DSMaps/DS_freezing.html',
+			  'https://cw3e.ucsd.edu/iwv-and-ivt-forecasts',
+			  'https://cw3e.ucsd.edu/landfall-tool-dprog-dt',
+			  'https://www.nwrfc.noaa.gov/weather/10_day.cgi?v=20200803v1',
+			  'https://www.nwrfc.noaa.gov/rfc',
+			  'https://www.cpc.ncep.noaa.gov/products/predictions/814day',
+			  'https://nwcc-apps.sc.egov.usda.gov/imap/#version=2&elements=&networks=!&states=!&basins=!&hucs=&minElevation=&maxElevation=&elementSelectType=any&activeOnly=true&activeForecastPointsOnly=true&hucLabels=false&hucIdLabels=false&hucParameterLabels=true&stationLabels=&overlays=&hucOverlays=&basinOpacity=75&basinNoDataOpacity=25&basemapOpacity=100&maskOpacity=0&mode=data&openSections=dataElement,parameter,date,basin,options,elements,location,networks&controlsOpen=true&popup=&popupMulti=&popupBasin=&base=esriNgwm&displayType=basinstation&basinType=8&dataElement=WTEQ&depth=-8&parameter=PCTMED&frequency=DAILY&duration=I&customDuration=&dayPart=E&monthPart=E&forecastPubDay=1&forecastExceedance=50&useMixedPast=true&seqColor=1&divColor=7&scaleType=D&scaleMin=&scaleMax=&referencePeriodType=POR&referenceBegin=1991&referenceEnd=2020&minimumYears=20&hucAssociations=true&relativeDate=-1&lat=47.382&lon=-118.920&zoom=7.5'
           ];
 
           // Loop through the array and open each URL in a new tab
