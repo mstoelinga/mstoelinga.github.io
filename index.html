@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="css/blueprint/src/reset.css"      type="text/css" media="screen, projection">
 <link rel="stylesheet" href="css/blueprint/src/typography.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="css/atms111.css"                  type="text/css">
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="favicon/site.webmanifest">
 
 <style>
 #wrap {
@@ -46,13 +51,9 @@ A{text-decoration: none}
 <br><br>
 <!-- =========================== EDIT TEXT HERE FOR MAIN PORTION OF PAGE =========== -->
 
-<h2>USACE Seattle District Weather/Hydro/Climate Resourcessss</h2>
-<h3>Michael Warner, Meteorologist, Water Management</h3>
-<hr>
-
-  <a class="1" target="_blank" href="http://www.nwd-wc.usace.army.mil/nws/hh/www/index.html" >USACE Seattle Water Management</a>&nbsp &nbsp &nbsp &nbsp
-  <a target="_blank" href="https://nws-wmops.nws.usace.army.mil/common/dashboard/www/index.html" >RCC Columbia Information (DB Query, internal)</a>&nbsp &nbsp &nbsp &nbsp  
-  <a target="_blank" href="https://time.is/UTC" >What time is it?</a><br><br>
+<h2>USACE Seattle District Weather/Hydro/Climate Resources</h2>
+<h3>Mark Stoelinga, Research Physical Scientist, USACE / ERDC / GRL</h3>
+<h4> (based on original web site by Mike Warner, previous USACE Seattle District Meteorologist)</h4>
 
 <hr>
 <!-- To add sites that get opened in new tabs upon this button click for daily weather briefing -->
@@ -68,18 +69,24 @@ A{text-decoration: none}
           // ===== Note, the window.open() function is typically blocked if you have a pop-up blocker
           // ===== running in your browser, and only the first, or maybe no, tabs will open.
 	      const urls = [
-			  'https://forecast.weather.gov/product.php?site=NWS&issuedby=sew&product=AFD&format=CI&glossary=1',  // NatWeaSvc - Seattle Area Fcst Disc
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?h500_vort+/-168/168/',  // UW Loop of GFS 500 hPa -7 to +7 days
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?ir_common+/48h',   // UW IR satellilte NE Pac 48-h loop
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/24h',   // UW Vis satellilte WA St 24-h loop
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?radar_atx_ref1+/3h/+-update+3600',   // UW NEXRAD radar 3-h loop
-			  'https://www.nwrfc.noaa.gov/rfc/',  // RFC precip map (click observed precip on right side, then 24-h accum button)
-			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_pcp3+///3',  // UW GFS-WRF 4-km 3-h precip
-			  'https://www.weather.gov/sew/forecastgraphics',  // NatWeaSvc - Seattle hi/lo temp forecasts
-			  'https://cw3e.ucsd.edu/Projects/QPF/QPF.html',  // CW3e QPF
-			  'https://cw3e.ucsd.edu/iwv-and-ivt-forecasts/',  // CW3E AR products
-			  'https://cw3e.ucsd.edu/west-wrf_gfs_ecmwf_ivt/',  // CW3E West WRF IVT forecasts
-			  'https://www.nwrfc.noaa.gov/weather/10_day.cgi'  // NWRFC 10-day outlook
+			  'https://forecast.weather.gov/product.php?site=NWS&issuedby=sew&product=AFD&format=CI&glossary=1',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?h500_vort+/-168/168/',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?ir_common+/48h',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/24h',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?radar_atx_ref1+/4h/+-update+3600',
+			  'https://www.weather.gov/wrh/hazards?obs=true&wfo=sew',
+			  'https://a.atmos.washington.edu/~ovens/loops/wxloop.cgi?wrfd1_slp+///1',
+			  'https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_pcp3+///3',
+			  'https://www.weather.gov/sew/forecastgraphics',
+			  'https://www.weather.gov/marine/sewmz',
+			  'https://cw3e.ucsd.edu/Projects/QPF/QPF.html',
+			  'https://cw3e.ucsd.edu/DSMaps/DS_freezing.html',
+			  'https://cw3e.ucsd.edu/iwv-and-ivt-forecasts',
+			  'https://cw3e.ucsd.edu/landfall-tool-dprog-dt',
+			  'https://www.nwrfc.noaa.gov/weather/10_day.cgi?v=20200803v1',
+			  'https://www.nwrfc.noaa.gov/rfc',
+			  'https://www.cpc.ncep.noaa.gov/products/predictions/814day',
+			  'https://nwcc-apps.sc.egov.usda.gov/imap/#version=2&elements=&networks=!&states=!&basins=!&hucs=&minElevation=&maxElevation=&elementSelectType=any&activeOnly=true&activeForecastPointsOnly=true&hucLabels=false&hucIdLabels=false&hucParameterLabels=true&stationLabels=&overlays=&hucOverlays=&basinOpacity=75&basinNoDataOpacity=25&basemapOpacity=100&maskOpacity=0&mode=data&openSections=dataElement,parameter,date,basin,options,elements,location,networks&controlsOpen=true&popup=&popupMulti=&popupBasin=&base=esriNgwm&displayType=basinstation&basinType=8&dataElement=WTEQ&depth=-8&parameter=PCTMED&frequency=DAILY&duration=I&customDuration=&dayPart=E&monthPart=E&forecastPubDay=1&forecastExceedance=50&useMixedPast=true&seqColor=1&divColor=7&scaleType=D&scaleMin=&scaleMax=&referencePeriodType=POR&referenceBegin=1991&referenceEnd=2020&minimumYears=20&hucAssociations=true&relativeDate=-1&lat=47.382&lon=-118.920&zoom=7.5'
           ];
 
           // Loop through the array and open each URL in a new tab
@@ -95,10 +102,8 @@ A{text-decoration: none}
   <a href="hydro.html">  <img  width="285px" alt="hydrology"            src="images/hydro_button.png">  </a><br><br>
   <a href="coast_mar.html"><img  width="300px" alt="coastal"   src="images/coast_mar_button.png"></a>
   </center>
+<br>
 <hr>
-
-Last modified: Tue 08 Jan 2019
-<!-- hhmts end -->
 
 </div>
 
@@ -108,22 +113,21 @@ Last modified: Tue 08 Jan 2019
 	<iframe width="375" height="200" src="https://embed.windy.com/embed2.html?lat=48.807&lon=-133.594&zoom=3&level=surface&overlay=wind&menu=&message=&marker=&forecast=12&calendar=now&location=coordinates&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
 	<br><br>
 	
-Additional Links <br>
-	<a target="_blank" href="https://atmos.washington.edu"    		>UW Atmos      &nbsp &nbsp </a>
-	<a target="_blank" href="https://www.nwrfc.noaa.gov/rfc/" 		>NWRFC         &nbsp &nbsp </a>
-	<a target="_blank" href="https://dashboard.hydroforecast.com/projects"  >Upstream Tech &nbsp &nbsp </a> <br><br>
-	
-
-	<hr>
-
-	<a class="twitter-timeline" data-lang="en" data-width="350" data-height="550" data-theme="light" href="https://twitter.com/ddoppler/lists/weather-climate">A Twitter List by ddoppler</a> 
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-		<br>
 <hr>
-
 <br><br>
-
+	
+<p id="date"></p><br><br>
+	
+<script>
+n =  new Date(document.lastModified);
+y = n.getFullYear();
+m = n.getMonth();
+d = n.getDate();
+monthArr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+m = monthArr[m];
+document.getElementById("date").innerHTML = "last modified: " + d + " " + m + " " + y;
+</script>
+	
 </div>
   </body>
 </html>

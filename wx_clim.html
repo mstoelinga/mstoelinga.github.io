@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="css/blueprint/src/reset.css"      type="text/css" media="screen, projection">
 <link rel="stylesheet" href="css/blueprint/src/typography.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="css/atms111.css"                  type="text/css">
+<link rel="stylesheet" href="css/special_paragraphs.css"       type="text/css">
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="favicon/site.webmanifest">
 
 <style>
 #wrap {
@@ -43,161 +49,250 @@ A{text-decoration: none}
 <a href="index.html"><img  style="width: 1100px" title=""  src="images/main_page_banner.png"/></a> <!-- BANNER -->
 
 <div class="column span-17 colborder">
-	<a name="top"></a>
-<br><br>
-<!-- =========================== EDIT TEXT HERE FOR MAIN PORTION OF PAGE =========== -->
 
-<h3><b><span style='color: red'>WEATHER</span></b> &nbsp &nbsp / &nbsp &nbsp <a href="hydro.html" style='color: black'>HYDROLOGY</a> &nbsp &nbsp / &nbsp &nbsp <a href="climate.html" style='color: black'>CLIMATE</a> &nbsp &nbsp / &nbsp &nbsp <a href="other.html" style='color: black'>OTHER</a> </h3>
+<br><br>
+<h3> <a href="index.html" style='color: black'>Home</a> &nbsp &nbsp &nbsp &nbsp <b><span style='color: red'>WEATHER&nbsp/&nbspCLIMATE</span></b> &nbsp &nbsp &nbsp &nbsp <a href="hydro.html" style='color: black'>HYDROLOGY</a> &nbsp &nbsp &nbsp &nbsp <a href="coast_mar.html" style='color: black'>COASTAL&nbsp/&nbspMARINE</a> </h3>
+
+<hr>
+<p class="novertmar-par"><strong>Table of Contents</strong></p>
+<hr>
+
+<div class="column span-7 colborder">
+  <a href="#sat">Satellite</a> &nbsp;|&nbsp;
+  <a href="#rad">Radar</a> &nbsp;|&nbsp;
+  <a href="#sou">Soundings</a> &nbsp;|&nbsp;
+  <a href="#sfc">Surface Weather</a> &nbsp;|&nbsp;
+  <a href="#nws">NWSvc Local Office Products</a> &nbsp;|&nbsp;
+  <a href="#mdl">Model Forecasts</a> &nbsp;|&nbsp;
+  <a href="#ar">Atmospheric Rivers</a> &nbsp;|&nbsp;
+  <a href="#mntwx">Mountain Weather</a> &nbsp;|&nbsp;
+  <a href="#webcams">Web Cams / Traffic / Road Weather</a>
+</div>
+
+<div class="column span-7 last">
+  <a href="#s2sclim">Sub-Seasonal / Seasonal / Climate</a> &nbsp;|&nbsp;
+  <a href="#dboards">Maprooms and Dashboards</a> &nbsp;|&nbsp;
+  <a href="#comwx">Commercial Sites</a> &nbsp;|&nbsp;
+  <a href="#firewx">Fire Wx</a> &nbsp;|&nbsp;
+  <a href="#aq">Air Quality</a> &nbsp;|&nbsp;
+  <a href="#posit">Aircraft / Ship Positions</a>
+</div>
 
 <hr>
 
-  <h4>USACE</h4>
-  <a class="1" target="_blank" href="http://www.nwd-wc.usace.army.mil/nws/hh/www/index.html" >USACE Seattle Water Management</a>&nbsp &nbsp &nbsp &nbsp
-  <a target="_blank" href="https://nws-wmops.nws.usace.army.mil/common/dashboard/www/index.html" >RCC Columbia Info (DB Query, internal)</a>&nbsp &nbsp &nbsp &nbsp  
-  <a target="_blank" href="https://time.is/UTC" >What time is it?</a>&nbsp &nbsp &nbsp &nbsp <br><br>
-  <!-- <a target="_blank" href="https://twitter.com/nwspodunk?lang=en" >NWS Podunk</a> -->
-  <hr>
+<!-- =========================== Start of Left Side Content =========== -->
 
-<table>
-  <tr>
-    <td style="vertical-align:top" align="left">
-      <h4>University of Washington</h4>
-      <b>RADAR</b><br>
-      <a target="_blank" href="https://atmos.washington.edu/weather/radar.shtml" >Northwest</a> &nbsp &nbsp
-      <a target="_blank" href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJuYXRpb25hbCIsImNlbnRlciI6Wy05NS4wMjIsMzddLCJsb2NhdGlvbiI6bnVsbCwiem9vbSI6NCwibGF5ZXIiOiJicmVmX3FjZCJ9LCJhbmltYXRpbmciOnRydWUsImJhc2UiOiJkYXJrY2FudmFzIiwiYXJ0Y2MiOmZhbHNlLCJjb3VudHkiOmZhbHNlLCJjd2EiOmZhbHNlLCJyZmMiOmZhbHNlLCJzdGF0ZSI6dHJ1ZSwibWVudSI6ZmFsc2UsInNob3J0RnVzZWRPbmx5Ijp0cnVlLCJvcGFjaXR5Ijp7ImFsZXJ0cyI6MC42MywibG9jYWwiOjAuNiwibG9jYWxTdGF0aW9ucyI6MC44LCJuYXRpb25hbCI6MC44OX19#/" >US Full</a><br><br>
+<a id="sat"></a><h2><u>Satellite</u></h2>
+<p class="novertmar-par"><strong>UW Satellite Looper</strong>
+&nbsp;&nbsp;<span title="Note: You can set or change the end time, length, or image interval of a loop, via the URL. In the example below,
+the end time is 2025-01-15 at 00Z, the length is 120 hours, and the image interval is 90 minutes.
+&nbsp;&nbsp;https://a.atmos.washington.edu/~ovens/wxloop.cgi?wv_common_full+2025011500/120h/90m">Tips</span></p>
+<p class="novertmar-par">4km IR E. Pacific: <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?ir_common_full+/24h/">24-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?ir_common_full+/48h/">48-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?ir_common_full+/72h/">72-hr</a>
+&nbsp;&nbsp;4km WV E. Pacific: <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wv_common_full+/24h/">24-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wv_common_full+/48h/">48-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wv_common_full+/72h/">72-hr</a>
+&nbsp;&nbsp;1km Visible PNW: <a href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/24h/">24-hr</a> <a href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/48h/">48-hr</a> <a href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/72h/">72-hr</a>
+</p>
+<p class="novertmar-par"><strong><a href="https://weather.rap.ucar.edu/satellite">NCAR/RAL Satellite Page</a></strong></p>
+<p class="novertmar-par"><a href="https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G18&amp;sector=np&amp;band=14&amp;length=72&amp;dim=0"><strong>NESDIS GOES-WEST (aka GOES-18) Viewer</strong></a></p><br />
+<a id="rad"></a><h2><u>Radar</u></h2>
+<p class="novertmar-par"><strong>UW Radar Looper</strong>
+<p class="novertmar-par"><a href="https://atmos.washington.edu/weather/radar.shtml">Northwest</a>&nbsp; &nbsp;<a href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJuYXRpb25hbCIsImNlbnRlciI6Wy05NS4wMjIsMzddLCJsb2NhdGlvbiI6bnVsbCwiem9vbSI6NCwibGF5ZXIiOiJicmVmX3FjZCJ9LCJhbmltYXRpbmciOnRydWUsImJhc2UiOiJkYXJrY2FudmFzIiwiYXJ0Y2MiOmZhbHNlLCJjb3VudHkiOmZhbHNlLCJjd2EiOmZhbHNlLCJyZmMiOmZhbHNlLCJzdGF0ZSI6dHJ1ZSwibWVudSI6ZmFsc2UsInNob3J0RnVzZWRPbmx5Ijp0cnVlLCJvcGFjaXR5Ijp7ImFsZXJ0cyI6MC42MywibG9jYWwiOjAuNiwibG9jYWxTdGF0aW9ucyI6MC44LCJuYXRpb25hbCI6MC44OX19#/">US Full</a>&nbsp; &nbsp;<a href="https://a.atmos.washington.edu/~ovens/loops/wxloop.cgi?radar_atx_ref1+/2h">Individual Radar at Seattle/Camano Island</a>
+&nbsp;&nbsp;<span title="Note, with Individual radars, can customize url:
+&nbsp;&nbsp;- https://osa.atm.washington.edu/~ovens/loops/wxloop.cgi?radar_atx_ref1+/2h
+&nbsp;&nbsp;- Replace atx with rtx (Portland, OR), lgx (Langley Hill, near Ocean Shore, WA), or otx (Spokane, WA).
+&nbsp;&nbsp;- Replace ref (reflectivity) with vel (Doppler velocity).
+&nbsp;&nbsp;- Replace 1 (lowest elevation angle) with 2, 3, 4 (higher elevation angles).">
+Tips</span></p><br />
+<p class="novertmar-par"><a href="https://weather.rap.ucar.edu/radar/"><strong>NCAR/RAL Radar Page</strong></a></p>
+<p class="novertmar-par"><a href="https://psl.noaa.gov/data/obs/datadisplay/ "><strong>NOAA/PSL Radar/Acoustic Wind and Temperature Profilers</strong></a></p><br />
 
-      <a target="_blank" href="https://atmos.washington.edu/wrfrt/extendedgfsinit.html" ><b>36km XGFS-WRF</b></a><br>
-	  <a target="_blank" href="https://atmos.washington.edu/wrfrt/extendedgfsinitotherdates.html" >Previous Runs</a><br>
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_500vor+///3" >500 hPa Z/vorticity</a><br>
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_fzlc+///3" >Freezing Level</a><br>
-	  <a target="_blank" href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcpw+///3" >Integrated Water Vapor</a><br>
-	  <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_ivt+///3" >Integrated Water Vapor Transport</a><br>
-      Precip  &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcp3+///3" >3-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcp24+///3" >24-hr</a> &nbsp &nbsp
-      <!-- <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcp48+///3" >48-hr</a> &nbsp &nbsp -->
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcp72+///3" >72-hr</a><br><br>
+<a id="sou"></a><h2><u>Soundings</u></h2>
+<p class="novertmar-par"><a href="https://weather.uwyo.edu/upperair/sounding_legacy.html">University of Wyoming Souning Data and Plots</a></p><br />
+<a id="sfc"></a><h2><u>Surface Observations, Analysis, and Maps</u></h2>
+<h3>Precipitation</h3>
+<p class="novertmar-par"><a href="https://www.cocorahs.org/">CoCoRaHS Interactive Map</a></p>
+<p class="novertmar-par"><a href="https://www.weather.gov/wrh/hazards?obs=true&amp;wfo=sew">NWSvc &ndash; Seattle Observations Mapping Tool</a>
+&nbsp;&nbsp;<span title="Select Precipitation from Display drop-down. Select latest or historical.
+Higher densities can only be selected if zoomed in.">Tips</span></p>
+<p class="novertmar-par"><a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/">USGS Mapping Tool with Precip Sites</a>
+&nbsp;&nbsp;<span title="On Layers menu, under USGS stations, turn on streamflow, surface water levels, and precipitation.
+Streamflow/gauge sites will be circles, precip sites will be diamonds">Tips</span></p>
+<p class="novertmar-par"><a href="https://water.usace.army.mil/office/nws">USACE Seattle District Water Management Main Page</a>
+&nbsp;&nbsp;<span title="Note, for each basin, one of the sites in the top menu is &ldquo;Precipitation&rdquo;,
+which shows a precip meteogram from several relevant measurement sites in the basin.">Tips</span></p>
+<p class="novertmar-par"><a href="https://psl.noaa.gov/data/obs/datadisplay/">NOAA / PSL Observation Network: Real-Time Feed from Special Networks (including CW3E/FIRO/HAHD sites)</a></p><br />
+<h3>Surface Weather Observations</h3>
+<p class="novertmar-par"><a href="https://a.atmos.washington.edu/data/">UW Atmos. Sci.</a></p>
+<p class="novertmar-par"><a href="https://weather.rap.ucar.edu/surface/">NCAR-RAL</a></p>
+<p class="novertmar-par"><a href="https://www.weather.gov/wrh/hazards?obs=true&amp;wfo=sew">NWSvc-Seattle Current Obs Map</a></p>
+<p class="novertmar-par"><a href="https://mesonet.climate.umt.edu/api/v2/map/latest/">Montana Climate Office / U. of Montana Mesonet</a></p><br />
+<a id="nws"></a><h2><u>National Weather Service &ndash; Local Office Web Sites</u></h2>
+<h3>Seattle</h3>
+<p class="novertmar-par"><a href="https://www.weather.gov/sew">Seattle Main Page</a></p>
+<p class="novertmar-par"><a href="https://forecast.weather.gov/product.php?site=otx&amp;issuedby=SEW&amp;product=AFD">Seattle NWSvc Area Forecast Discussion</a></p>
+<p class="novertmar-par"><a href="https://www.weather.gov/sew/CliPlot">Monthly Climate Summary for 6 cities in W. Wash.</a></p>
+<p class="novertmar-par"><a href="https://www.weather.gov/sew/forecastgraphics">1-7 Day Temperature, Wind, and Precip Forecast Maps</a></p>
+<p class="novertmar-par"><a href="https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=SEW&amp;wwa=flood%20watch"> WA Flood Watch</a></p><br />
+<h3>Spokane</h3>
+<p class="novertmar-par"><a href="https://www.weather.gov/otx/">Spokane Main Page</a></p>
+<p class="novertmar-par"><a href="https://forecast.weather.gov/product.php?site=otx&amp;issuedby=OTX&amp;product=AFD">Spokane NWSvc Area Forecast Discussion</a></p><br />
+<h3>Other</h3>
+<p class="novertmar-par"><a href="https://www.weather.gov/pqr">Portland Office Main Page</a></p>
+<p class="novertmar-par"><a href="https://www.weather.gov/mso/">Missoula Office Main Page</a></p><br /><br />
+<a id="mdl"></a><h2><u>Model Forecasts</u></h2>
+<p class="novertmar-par"><a href="https://mag.ncep.noaa.gov/model-guidance-model-area.php">All NCEP Model Analysis and Guidance (MAG) Products &ndash; Top-Level Menu</a></p><br />
+<h3>Deterministic:</h3>
+<p class="novertmar-par"><a href="https://atmos.washington.edu/wrfrt/gfsinit.html"><strong>UW GFS-based WRF, Regular (early) Run Menu Page</strong></a>
+&nbsp;&nbsp;<span title="You&rsquo;ll know it&rsquo;s the regular (early run) menu page because the background is NOT pink.
+This forecast is completed first.  It goes out to forecast hour 120, and has 36, 12, 4 and 1.33-km domains.
+Left sidebar has link to other initial dates">Tips</span></p>
+&nbsp;&nbsp;Quick links to 4-km precip: <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_wa_pcp3+///3">3-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_wa_pcp24+///3">24-hr</a><br />
+&nbsp;&nbsp;Quick links to 1.33-km precip: <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd4_ww_pcp3+//84/3">3-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd4_ww_pcp24+///3">24-hr</a>
 
-      <a target="_blank" href="https://atmos.washington.edu/wrfrt/rt/extendedgfsinit.frame1.html#12km" ><b>12km XGFS-WRF</b></a><br>
-	  <a target="_blank" href="https://atmos.washington.edu/wrfrt/extendedgfsinitotherdates.html" >Previous Runs</a><br>
-	  <a target="_blank" href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_fzlc+///3">Freezing Level</a><br>
-      Precip  &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_pcp3+///3"  >3-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_pcp24+///3" >24-hr</a> &nbsp &nbsp
-      <!-- <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_pcp48+///3" >48-hr</a> &nbsp &nbsp -->
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_pcp72+///3" >72-hr</a><br><br>
+<p class="novertmar-par"><a href="https://atmos.washington.edu/wrfrt/extendedgfsinit.html"><strong>UW GFS-based WRF, Extended (later) Run Menu Page</strong></a>
+&nbsp;&nbsp;<span title="You&rsquo;ll know it&rsquo;s the extended (later run) menu page because the background is pink.
+This forecast runs after regular run is complete. It goes out to forecast hour 240, and only has 36 and 12-km domains.
+Left sidebar has link to other initial dates.">Tips</span></p>
+&nbsp;&nbsp;Quick links to 36-km precip: <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcp3+///3">3-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcp24+///3">24-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_pcp72+///3">72-hr</a><br />
+&nbsp;&nbsp;Quick links to 12-km precip: <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_pcp3+///3">3-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_pcp24+///3">24-hr</a> <a href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd2_x_pcp72+///3">72-hr</a><br />
+&nbsp;&nbsp;Quick link to <a href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_ivt+///3">36-km IVT</a>
 
-      <a target="_blank" href="https://atmos.washington.edu/wrfrt/gfsinit.html" ><b>4km GFS-WRF</b></a><br>
-	<a target="_blank" href="https://atmos.washington.edu/wrfrt/rt/otherdates.html" >Previous Runs</a><br>
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_x_slp+///3"    >SLP, 10m wind, 925 hPa temp</a><br>
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_x_tsfcbc+///3" >SFC temperature</a><br>
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_x_850t+///3"   >850 hPa temp, wind, height</a><br>
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_x_fzlc+///3"   >Freezing Level</a><br>
-      Precip  &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_wa_pcp3+///3"  >3-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_wa_pcp24+///3" >24-hr</a> &nbsp &nbsp <br><br>
-      <!-- <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_wa_pcp48+///3" >48-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd3_wa_pcp72+///3" >72-hr</a> -->
+<p class="novertmar-par"><a href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?h500_vort+/-168/168/">GFS 500-hPa -7 to +7 day loop from UW</a></p>
+<p class="novertmar-par"><a href="https://rapidrefresh.noaa.gov/hrrr/HRRR/Welcome.cgi?dsKey=hrrr_ncep_jet&amp;domain=SEA-POR">HRRR</a></p>
+<p class="novertmar-par"><a href="https://mag.ncep.noaa.gov/model-guidance-model-parameter.php?group=Model%20Guidance&amp;model=GFS&amp;area=NAMER&amp;ps=area">NCEP Model Analysis and Guidance (MAG) Page for GFS over North America</a></p>
+<p class="novertmar-par"><a href="https://graphical.weather.gov/sectors/sectorDay.php?sector=pacnorthwest&amp;view=marine&amp;expand=false#tabs">NWSvc Graphical Wx Fcsts for PacNW</a></p><br />
+<p><strong>NatWeaSvc / WPC QPF Product:</strong></p>
+<p class="novertmar-par"><a href="https://www.wpc.ncep.noaa.gov/index.shtml#page=ovw">Main Page</a></p>
+<p class="novertmar-par"><a href="https://www.wpc.ncep.noaa.gov/archives/qpf/get_qpf_images.php">Archive Page</a>
+&nbsp;&nbsp;<span title="Can do a poor man&rsquo;s dProg/dt here.">Tip</span></p><br />
+<h3>Ensembles / Probabilistic:</h3>
+<p class="novertmar-par"><a href="https://www.wpc.ncep.noaa.gov/Prob_Precip/?zoom=SEW">NCEP Weather Prediction Center (WPC) Probabilistic Precipitation Portal</a></p>
+<p class="novertmar-par"><a href="https://mag.ncep.noaa.gov/model-guidance-model-parameter.php?group=Model%20Guidance&amp;model=GFS&amp;area=NAMER&amp;ps=area">NCEP Model Analysis and Guidance (MAG) Page for GFS over North America</a>
+&nbsp;&nbsp;<span title="For ensemble forecasts, select one of either GEFS-SPAG (&ldquo;Spaghetti Plots&rdquo;
+or GEFS-MEAN-SPRD (mean and spread plots, including probability plots)">Tip</span></p>
+<p class="indent-novertmar-par"></p>
+<p class="novertmar-par"><a href="https://www.esrl.noaa.gov/psd/map/images/ens/ens.html">Alternate NCEP Ensemble Model Forecast Viewer</a></p>
+<p class="novertmar-par"><a href="https://charts.ecmwf.int/products/plot_ensm_essential?area=North%20America&amp;base_time=202401041200&amp;parameter=MSLP">ECMWF Ensemble Mean and Spread</a></p><br />
+<p><strong>Plume Viewers for Select Locations:</strong></p>
+<p class="novertmar-par"><a href="http://www.spc.noaa.gov/exper/sref/srefplumes/">NCEP SREF Plume Viewer</a></p>
+<p class="novertmar-par"><a href="https://www.emc.ncep.noaa.gov/users/meg/gefs_plumes/index.html?stationname=KSEA">EMC GEFS Plume Viewer</a></p>
+<p class="novertmar-par"><a href="https://weather.gc.ca/ensemble/naefs/EPSgrams_e.html">NAEFS EnvCanada Plume Viewer</a></p><br />
+<a id="ar"></a><h2><span style="text-decoration: underline;">Atmospheric Rivers (ARs)</span></h2>
+<p class="novertmar-par"><a href="https://cw3e.ucsd.edu/">CW3E: real-time AR forecasts and observations</a></p>
+<p class="novertmar-par"><a href="https://cw3e.ucsd.edu/Projects/ARCatalog/catalog.html">CW3E AR Catalog</a></p>
+<p class="novertmar-par"><a href="http://tropic.ssec.wisc.edu/real-time/mtpw2/product.php?color_type=tpw_nrl_colors&amp;prod=global2&amp;timespan=24hrs&amp;anim=html5">U.Wisc MIMIC Satellite-based Ingegrated Water Vapor Loops</a></p>
+<p class="novertmar-par"><a href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?wrfd1_x_ivt+///3">U. Wash. GFS-WRF 36-km-grid IVT</a><br />
+  <a id="mntwx"></a><h2><span style="text-decoration: underline;">Mountain Weather and Forecasts</span></h2>
+ 
+<p class="novertmar-par"><a href="NWSvc-Seattle%20Mountain%20Wx%20Forecast">NWSvc-Seattle Mountain Wx Forecast</a></p>
+<p class="novertmar-par"><a href="https://nwac.us/weatherdata/">NW Avalanche Center</a></p>
+<p class="novertmar-par"><a href="https://wsdot.com/travel/real-time/mountainpasses">WSDOT Mountain Pass Weather and Cameras</a></p>
+<p><strong>Ski Areas with Helpful Weather Info:</strong></p>
+<p class="indent-novertmar-par"><a href="https://summitatsnoqualmie.com/webcams">Snoqualmie Pass, Alpental</a></p>
+<p class="indent-novertmar-par"><a href="https://www.stevenspass.com/the-mountain/mountain-conditions/mountain-cams.aspx">Stevens Pass</a></p>
+<p class="indent-novertmar-par"><a href="https://www.crystalmountainresort.com/the-mountain/mountain-report-and-webcams/webcams">Crystal Mountain</a></p>
+<p class="indent-novertmar-par"><a href="https://www.missionridge.com/webcams">Mission Ridge</a></p><br />
 
-      <a target="_blank" href="https://atmos.washington.edu/wrfrt/gfsinit.html" ><b>1.33km GFS-WRF</b></a><br>
-	  <a target="_blank" href="https://atmos.washington.edu/wrfrt/rt/otherdates.html" >Previous Runs</a><br>
-      Precip  &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd4_ww_pcp3+//84/3" >3-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd4_ww_pcp24+///3"  >24-hr</a> &nbsp &nbsp <br><br>
-      <!-- <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd4_ww_pcp48+///3"  >48-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wrfd4_ww_pcp72+///3"  >72-hr</a> -->
+<a id="webcams"></a><h2><span style="text-decoration: underline;">Web Cams, Traffic, and Road Weather</span></h2>
+<p class="novertmar-par"><a href="https://wsdot.com/Travel/Real-time/Map/">WSDOT Road Conditions, Traffic, and Traffic Cams</a></p>
+<p class="novertmar-par"><a href="https://511.idaho.gov/@-115.6969,45.59451,7?show=cameras">ITD Traffic Cams (Idaho)</a></p>
+<p class="novertmar-par"><a href="http://rwis.mdt.mt.gov/scanweb/SWFrame.asp?Pageid=CamSummary&amp;Units=English&amp;Groupid=150000&amp;Siteid=&amp;Senid=&amp;Wxid=&amp;Mapid=1669&amp;DisplayClass=Java&amp;SenType=All&amp;HEndDate=&amp;Zoneid=&amp;Mode=&amp;Sprayerid=&amp;Dvid=&amp;CD=10%2F18%2F2017+3%3A23%3A03+PM">MDT Traffic Cams (Montana)</a></p>
+<p class="novertmar-par"><a href="https://www.evergreencoastwa.com/plan/web-cams">Evergreen Coast: Several WA/OR Coastal Web Cams</a></p>
+<p class="novertmar-par"><a href="https://www.experiencewestport.com/live-westport-webcam">Westport, WA Viewing Tower</a></p>
+<p class="novertmar-par"><a href="https://www.canterburyinn.com/beach-cam">Ocean Shores, WA (Canterbury Inn)</a></p>
+<p class="novertmar-par"><a href="https://www.thekalalochlodge.com">Kalaloch, WA (Kalaloch Lodge)</a></p>
+<p class="novertmar-par"><a href="https://stale.com">First Beach and James Island, WA cams are out of service but should come back at some point.</a></p>
+<p class="novertmar-par"><a href="https://www.youtube.com/watch?v=g2HGBY2v-wo">Cox Bay, Tofino, BC (Pac. Sands Beach Resort)</a></p>
+<p class="novertmar-par"><a href="https://www.longbeachlodgeresort.com/site/video/cox-bay-tofino-webcam.html#live-beach-cam">Cox Bay, Tofino, BC (Long Beach Lodge Resort)</a></p>
+<br />
 
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/loops/" ><b>Satellite</b></a><br>
-      4km IR E. Pacific, &nbsp &nbsp 
-	  <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?ir_common_full+/24h/" >24-hr</a> &nbsp &nbsp 
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?ir_common_full+/48h/" >48-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?ir_common_full+/72h/" >72-hr</a><br>
-      4km WV E. Pacific, &nbsp 
-	  <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wv_common_full+/24h/" >24-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wv_common_full+/48h/" >48-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://atmos.washington.edu/~ovens/wxloop.cgi?wv_common_full+/72h/" >72-hr</a><br>
-      1km Visible PNW, &nbsp &nbsp 
-	  <a target="_blank" href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/24h/"    >24-hr</a>  &nbsp &nbsp
-      <a target="_blank" href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/48h/"    >48-hr</a> &nbsp &nbsp
-      <a target="_blank" href="https://a.atmos.washington.edu/~ovens/wxloop.cgi?vis1km_color+/72h/"    >72-hr</a><br><br>
-	  
-	  <!-- <a target="_blank" href="https://atmos.washington.edu/SPU/"    >Seattle Rain Watch</a><br> -->
-	  <!-- <a target="_blank" href="https://atmos.washington.edu/SCL/"    >Seattle Wind Watch</a><br><br> -->
-	  
-	  
-	  
-	  <hr>
-	  
-	  <a target="_blank" href="https://www.nwrfc.noaa.gov/weather/10_day.cgi" ><h4>NWRFC 10-day Weather</h4></a>
-	  <a target="_blank" href="https://rapidrefresh.noaa.gov/hrrr/HRRR/" >SPC HRRR Model Fields</a><br>
-	  <a target="_blank" href="http://cw3e.ucsd.edu/" >CW3E, AR real-time forecasting</a><br>
-	  <a target="_blank" href="https://atmos.washington.edu/data/vmaproom/" >UW, Virtual Maproom</a><br>
 
-    </td>
-    <td style="vertical-align:top" align="left">
-      <h4>National Weather Service</h4>
-      <a target="_blank" href="https://www.weather.gov/sew/Mountainforecast" >Seattle Mtn Forecast Page</a><br>
-      <a target="_blank" href="http://www.wrh.noaa.gov/map/?&zoom=6&scroll_zoom=true&center=44.91813929958515,-120.9814453125&basemap=ESRI%20Topographic&boundaries=true,false,false&obs=true&obs_type=weather&elements=temp,wind,gust&obs_popup=false&obs_density=1" >Current Observations, Entire Region</a><br>
-      <!-- <a target="_blank" href="http://www.wrh.noaa.gov/mso/newrgl.php">3-day Regional Surface Obs Map</a><br> -->
-	  <a target="_blank" href="https://psl.noaa.gov/data/obs/datadisplay/">West Coast Sfc Obs and Profilers</a><br>
-	  <br>
+<a id="s2sclim"></a><h2><span style="text-decoration: underline;">Sub-Seasonal, Seasonal and Climate Data and Forecasts</span></h2>
+<h3><strong><u>ENSO</u></strong></h3>
+<p class="novertmar-par"><a href="https://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/enso.shtml">NOAA / CPC Main ENSO Conditions and Forecasts Page</a></p>
+<p class="novertmar-par"><a href="http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/lanina/enso_evolution-status-fcsts-web.pdf">NOAA / CPC Current ENSO Bulletin</a></p>
+<p class="novertmar-par"><a href="http://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/">IRI ENSO Current and Forecast Quick Look</a></p><br />
+<h3><strong><u>Seasonal to Subseasonal Forecasts</u></strong></h3>
+<p class="novertmar-par"><a href="http://www.cpc.ncep.noaa.gov/products/forecasts/">NOAA / CPC Subseasonal to Seasonal Outlook Maps</a></p>
+<p class="novertmar-par"><a href="https://www.drought.gov/current-conditions">Drought Monitor</a></p>
+<p class="novertmar-par"><a href="https://wwa.colorado.edu/experimental-winter-precipitation-forecast">Western Water Assessment Experimental Winter Precipitation Forecast</a></p><br />
+<h3><strong><u>Sea Ice</u></strong></h3>
+<p class="novertmar-par"><a href="https://sites.google.com/site/arcticseaicegraphs/">Arctic Sea Ice Graphs</a></p>
+<p class="novertmar-par"><a href="https://neptune.gsfc.nasa.gov/csb/index.php?section=234">NASA Current Sea Ice Cover</a></p><br />
+<h3><strong><u>Historical Climate Data, Maps, and Custom Plotting</u></strong></h3>
+<p class="novertmar-par"><a href="http://climatereanalyzer.org/">Climate Reanalyzer</a></p>
+<p class="novertmar-par"><a href="https://www.esrl.noaa.gov/psd/data/composites/day/">ESRL NCEP Daily Reanalysis Plotting</a></p>
+<p class="novertmar-par"><a href="https://www.esrl.noaa.gov/psd/cgi-bin/data/timeseries/timeseries1.pl">ESRL NCEP Seasonal Mean Timeseries Plotting</a></p>
+<p class="novertmar-par"><a href="https://www.esrl.noaa.gov/psd/data/gridded/">ESRL Gridded Climate Datasets</a></p>
+<p class="novertmar-par"><a href="https://hprcc.unl.edu/">High Plains Regional Climate Center</a></p>
+<p class="novertmar-par"><a href="https://sercc.oasis.unc.edu/Map.php?region=wrcc">Southeast Regional Climate Center - Perspectives Map for Western US</a></p>
+<p class="novertmar-par"><a href="https://wrcc.dri.edu/summary/Climsmwa.html">WRCC WA State Climate Obs</a></p>
+<p class="novertmar-par"><a href="https://wrcc.dri.edu">WRCC Home Page</a></p><br />
 
-      <a target="_blank" href="https://www.weather.gov/sew/" ><b>Seattle WFO</b></a><br>
-	  <a target="_blank" href="https://forecast.weather.gov/product.php?site=NWS&issuedby=SEW&product=AFD&format=CI&version=1&glossary=1&highlight=off" >Forecast Discussion</a><br>
-      <a target="_blank" href="http://forecast.weather.gov/MapClick.php?lat=47.44825000000003&lon=-122.29843999999997" >7-day Wx Forecast</a><br>
-      <a target="_blank" href="https://www.weather.gov/wrh/timeseries?site=KSEA" >3-day Observations </a><br>
-      <a target="_blank" href="http://forecast.weather.gov/MapClick.php?lat=47.4483&lon=-122.2984&unit=0&lg=english&FcstType=graphical" >Graphical Forecast Display</a><br>
-      <a target="_blank" href="https://www.weather.gov/wrh/hazards?obs=true&wfo=sew" >Current Observations (great for recent precip map)</a><br>
-      <a target="_blank" href="https://www.weather.gov/sew/CliPlot" >Monthly Observations</a><br><br>
-	  
-	  <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=47.163&lon=-122.0252#.WyFsr2gvyHs" >Buckley, WA - 7-day Wx Forecast</a><br><br>
+<a id="dboards"></a><h2><span style="text-decoration: underline;">Useful Weather and Climate Maprooms and Dashboards</span></h2>
+<p class="novertmar-par"><a href="https://a.atmos.washington.edu/data/">UW Maproom</a> (&ldquo;Data and Forecasts&rdquo;) : Lots of stuff. Classic fax-style weather charts in left sidebar &ldquo;Virtual Maproom&rdquo; link</p>
+<p class="novertmar-par"><a href="https://psl.noaa.gov/map/">NOAA PSL Maproom</a></p>
+<p class="novertmar-par"><a href="https://weather.rap.ucar.edu/">NCAR RAL Maproom</a></p>
+<p class="novertmar-par"><a href="http://www.spc.noaa.gov/">Storm Prediction Center, NOAA</a>: Severe weather forecasts and observations</p>
+<p class="novertmar-par"><a href="https://www.wpc.ncep.noaa.gov/">Weather Prediction Center, NOAA</a>: Official NWS national weather forecasts</p>
+<p class="novertmar-par"><a href="http://www.nhc.noaa.gov/">National Hurricane Center, NOAA</a>: Tropical cyclone obs and fcsts</p>
+<p class="novertmar-par"><a href="https://wwa.colorado.edu/resources/intermountain-west-dashboard">Western Water Assessment Dashboard</a></p>
+<p class="novertmar-par"><a href="https://iridl.ldeo.columbia.edu/maproom/">IRI Climate and Weather Maproom</a> : Good ENSO Site</p><br />
 
-      <a target="_blank" href="https://www.weather.gov/otx/" ><b>Spokane WFO</b></a><br>
-	  <a target="_blank" href="https://forecast.weather.gov/product.php?site=OTX&issuedby=OTX&product=AFD&format=CI&version=1&glossary=1" >Forecast Discussion</a><br>
-      <a target="_blank" href="http://forecast.weather.gov/MapClick.php?lat=47.6199&lon=-117.5338" >7-day Wx Forecast</a><br>
-      <a target="_blank" href="https://www.weather.gov/wrh/timeseries?site=KGEG" >3-day Observations </a><br>
-      <a target="_blank" href="http://forecast.weather.gov/MapClick.php?lat=47.6199&lon=-117.5338&unit=0&lg=english&FcstType=graphical" >Graphical Forecast Display</a><br>
-      <a target="_blank" href="https://www.weather.gov/wrh/hazards?obs=true&wfo=otx" >Current Observations</a><br>
-      <a target="_blank" href="https://www.weather.gov/otx/CliPlot" >Monthly Observations</a><br><br>
-	  
-	  <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=48.273&lon=-116.5478#.WsKKAojwY-U" >Sandpoint, ID - 7-day Wx Forecast</a><br>
-	  <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lon=-115.31473159790038&lat=48.41097247934198#.WsKKLojwY-U" >Libby Dam, MT - 7-day Wx Forecast</a><br><br>
-	  
-	  <a target="_blank" href="https://www.weather.gov/mso/" ><b>Missoula WFO</b></a><br><br>
-	  <hr>
+<a id="comwx"></a><h2><span style="text-decoration: underline;">Weather &ldquo;For the Masses&rdquo; and Other Commercial Sites</span></h2>
+<p class="novertmar-par"><strong>Best Sites:</strong></p>
+<p class="novertmar-par"><a href="https://www.tropicaltidbits.com/">Tropical Tidbits</a></p>
+<p class="novertmar-par"><a href="https://weatherspark.com/">Weather Spark</a></p>
+<br><p class="novertmar-par"><strong>Moderately Useful Sites:</strong></p>
+<p class="novertmar-par"><a href="https://home.pivotalweather.com/">Pivotal Weather</a></p>
+<p class="novertmar-par"><a href="https://spaghettimodels.com/">Mike's Weather Page</a></p>
+<p class="novertmar-par"><a href="https://www.windy.com/">Windy</a></p>
+<p class="novertmar-par"><a href="https://www.timeanddate.com/">TimeandDate</a></p><br>
+<!-- Everything below is not very useful.
+<p class="novertmar-par"><a href="https://weather.us">weather.us</a>&nbsp;(part of The Weather Co)</p>
+<p class="novertmar-par"><a href="https://www.wunderground.com/">Weather Underground</a>&nbsp;(part of The Weather Co)</p>
+<p class="novertmar-par"><a href="https://weather.com/">The Weather Channel</a>&nbsp;(part of The Weather Co)</p>
+<p class="novertmar-par"><a href="https://www.accuweather.com/">Accuweather</a></p>
+<p class="novertmar-par"><a href="https://www.ventusky.com/">Ventusky</a></p>
+<p class="novertmar-par"><a href="https://weatherbug.com/">WeatherBug</a></p>
+<p class="novertmar-par"><a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+<p class="novertmar-par"><a href="https://worldweather.wmo.int/en/home.html">World Weather Information Service</a></p>
+<p class="novertmar-par"><a href="https://www.forecastadvisor.com/">ForecastAdvisor</a></p>
+<p class="novertmar-par"><a href="https://map.worldweatheronline.com/">World Weather Online</a></p>
+ -->
 
-      <h4>Ensembles</h4>
-	  <a target="_blank" href="http://www.spc.noaa.gov/exper/sref/srefplumes/"                                     >NCEP SREF Plume Viewer</a><br>
-	  <a target="_blank" href="https://www.emc.ncep.noaa.gov/users/meg/gefs_plumes/index.html?stationname=KSEA"    >EMC GEFS Plume Viewer</a><br>
-	  <!-- <a target="_blank" href="http://www2.mmm.ucar.edu/projects/ncar_ensemble/legacy/"                            >NCAR Ensemble Forecasts</a><br> 
-	  <a target="_blank" href="http://www2.mmm.ucar.edu/projects/ncar_ensemble/legacy/dash.php?d=2017123000"       >NCAR Ensemble Plumes</a><br>
-	  <a target="_blank" href="http://www2.mmm.ucar.edu/projects/ncar_ensemble/legacy/sounding.php?d=2017123000"   >NCAR Ensemble Soundings</a><br> -->
-	  <a target="_blank" href="https://weather.gc.ca/ensemble/naefs/EPSgrams_e.html"                               >NAEFS EnvCanada Plume Viewer</a><br>
-	  <a target="_blank" href="https://www.esrl.noaa.gov/psd/map/images/ens/ens.html"                              >NCEP (NMC) Froecast Products</a><br>
-	  <a target="_blank" href="https://charts.ecmwf.int/products/plot_ensm_essential?area=North%20America&base_time=202401041200&parameter=MSLP" >ECMWF Ensemble Mean and Spread, N.Am</a><br><br>
-	          
-    </td>
-  </tr>
-</table>
+<a id="firewx"></a><h2><span style="text-decoration: underline;">Wildfires and Fire Wx</span></h2>
+<p class="novertmar-par"><a href="https://www.nifc.gov/fire-information/maps">NIFC Maps</a></p>
+<p class="novertmar-par"><a href="https://egp.wildfire.gov/maps/?lat=47.264733&amp;lon=-120.685838&amp;zoom=8&amp;dimension=2d">EGP - WildFireSA Public</a></p>
+<p class="novertmar-par"><a href="https://experience.arcgis.com/experience/92dfba48047d484b8868b35d0f708532/page/Page#data_s=id%3AdataSource _1-18931c31f23-layer-21%3A147081">IMSR Map Experience</a></p>
+<p class="novertmar-par"><a href="https://firms.modaps.eosdis.nasa.gov/usfs/map/#d:24hrs;@-120.47,47.74,9.41z">NASA | FIRMS US/Canada</a></p>
+<p class="novertmar-par"><a href="https://inciweb.wildfire.gov">InciWeb the Incident Information System</a></p>
+<p class="novertmar-par"><a href="https://www.arcgis.com/home/webmap/viewer.html?webmap=df8bcc10430f48878b01c96e907a1fc3">ArcGIS - US Wildfire Activity Web Map</a></p>
+<p class="novertmar-par"><a href="https://www.americanforests.org/wildfire-map">Active Wildfire Map - American Forests</a></p>
+<p class="novertmar-par"><a href="https://wfca.com/fire-map?lng=-122.864&amp;lat=47.3783&amp;zoom=8.02">WFCA Fire Map: Tracking Current Wildfires in the US</a></p>
+<p class="novertmar-par"><a href="https://fire.airnow.gov/?lang=en#7.12/47.665/-120.579">AirNow Fire and Smoke Map</a></p>
+<p class="novertmar-par"><a href="https://nifc.maps.arcgis.com/apps/mapviewer/index.html?webmap=839a48fa685b4b5d962f975383c015c7">Northwest Large Fire Interactive Map</a></p>
+<p class="novertmar-par"><a href="https://www.mapofire.com/#10.1/47.6766/-120.4514">Map of Fire</a></p><br />
+<a id="aq"></a><h2><span style="text-decoration: underline;">Air Quality</span></h2>
+<p class="novertmar-par"><a href="https://waqi.info/">Real-time World Air Quality</a></p>
+<p class="novertmar-par"><a href="https://weather.gc.ca/firework/firework_anim_e.html?type=em&amp;utc=00">EnvCanada NA PM2.5</a></p>
+<p class="novertmar-par"><a href="http://map.pscleanair.org/?lat=47.6768311&amp;lon=-122.4756425&amp;z=9">Puget Sound Clean Air Graphing</a></p><br />
+<a id="posit"></a><h2><span style="text-decoration: underline;">Aircraft and Ship Position Maps</span></h2>
+<p class="novertmar-par"><a href="https://www.flightaware.com/live/">FlightAware: Real-time Aircraft Positions</a></p>
+<p class="novertmar-par"><a href="https://www.marinetraffic.com/en/ais/home/centerx:-120.3/centery:47.4/zoom:7">MarineTraffic: Real-time Ship Positions</a></p><br />
+
+<!-- =============== End of Left Side Content ======================= -->
+
 
 <hr>
 
 </div>
 
-<!-- =============== NEXT SECTION (RIGHT SIDE) ======================= -->
+<!-- =============== Start of Right Side Content ======================= -->
 	<div class="column span-6 last">
 	<br>
 	<iframe width="375" height="200" src="https://embed.windy.com/embed2.html?lat=48.807&lon=-133.594&zoom=3&level=surface&overlay=wind&menu=&message=&marker=&forecast=12&calendar=now&location=coordinates&type=map&actualGrid=&metricWind=kt&metricTemp=%C2%B0C" frameborder="0"></iframe>
 	<br><br>
 	
-	Additional Links <br>
-	<a target="_blank" href="https://atmos.washington.edu"    		>UW Atmos      &nbsp &nbsp </a>
-	<a target="_blank" href="https://www.nwrfc.noaa.gov/rfc/" 		>NWRFC         &nbsp &nbsp </a>
-	<a target="_blank" href="https://dashboard.hydroforecast.com/projects"  >Upstream Tech &nbsp &nbsp </a> <br><br>
-	
-
-	<hr>
-
 	<!-- <a class="twitter-timeline" data-lang="en" data-width="350" data-height="550" data-theme="light" href="https://twitter.com/ddoppler/lists/weather-climate">A Twitter List by ddoppler</a> 
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 	
